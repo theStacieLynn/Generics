@@ -34,6 +34,19 @@ public class GenericsDriver {
 		System.out.println("Printing Char array");
 		Generics.printArray(charArray);
 		
+		System.out.println("======Invoking generic interface======");
+		ElephantItem<Integer> obgMove = new ElephantItem<>();
+		obgMove.move(5, "Austin");
+		System.out.println(obgMove.getItemBeingMove()+ " Item");
+		System.out.println(obgMove.getLocationBeingMovedTo()+ " Location");
+		
+		System.out.println("======Bonded Type======");
+		MathBox<Integer> mObj= new MathBox<Integer>(5);
+		MathBox<Double> mObj2= new MathBox<Double>(49.00);
+		
+		System.out.println(mObj.sqrt());
+		System.out.println(mObj2.sqrt());
+		
 	}
 
 }

@@ -20,7 +20,8 @@ public class MyGenericClassDriver {
 		
 		// can add user defined types like employee 
 		/*
-		 * because generics dont work with 
+		 * because generic's don't work with primitive data types you must
+		 * use the corresponding wrapper class int --> Integer
 		 */
 	}
 
