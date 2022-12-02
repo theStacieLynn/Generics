@@ -40,13 +40,14 @@ public class GenericsDriver {
 		System.out.println(obgMove.getItemBeingMove()+ " Item");
 		System.out.println(obgMove.getLocationBeingMovedTo()+ " Location");
 		
+		System.out.println();
 		System.out.println("======Bonded Type======");
 		MathBox<Integer> mObj= new MathBox<Integer>(5);
 		MathBox<Double> mObj2= new MathBox<Double>(49.00);
 		
 		System.out.println(mObj.sqrt());
 		System.out.println(mObj2.sqrt());
-		
+		//Can not use string data type because it is not a child class of Number		
 	}
 
 }
